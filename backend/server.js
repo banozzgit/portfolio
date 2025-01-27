@@ -4,13 +4,10 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
-const http = require('http');
-const { Server } = require('socket.io');
 require('dotenv').config();
 
 const app = express();
-//const server = http.createServer(app); 
-//const io = new Server(server); 
+
 
 app.use(cors({
   origin: [
